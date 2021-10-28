@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(0, 0%, 98%);
+    font-family: poppins, sans-serif;
+    /* min-height: 100vh; */
+}
+.top {
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 600px;
+    text-align: center;
+}
+h1{
+    margin: 0;
+    font-weight: 200;
+    color:hsl(229, 6%, 66%) ;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 32px;
+    margin: 0;
+    color:hsl(234, 12%, 34%) ;
+}
+p{
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.card {
+    color: #fff;
+    width: 350px;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.08), 0 10px 10px rgba(0,0,0,0.1);
+}
+.card p{
+    font-weight: 200;
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+}
+
+.card_1::after{
+    background-color:hsl(180, 62%, 55%) ;
+}
+.card_2::after {
+    background-color:hsl(0, 78%, 62%) ;
+}
+.card_3::after{
+    background-color:hsl(34, 97%, 64%) ;
+}
+.card_4::after{
+    background-color:hsl(212, 86%, 64%) ;
+}
+
+.push {
+    transform: translateY(50%);
+}
+
+.card h2{
+    color: hsl(234, 12%, 34%);
+    font-size: 25px;
+    margin: 0;
+}
+ .card img {
+     display: block;
+     margin-left: auto;
+ }
+
+ @media (max-width:800px){
+     .push{
+         transform: translateY(0);
+     }
+ }
+
